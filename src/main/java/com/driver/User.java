@@ -1,19 +1,15 @@
 package com.driver;
 
-import java.util.List;
-
 public class User {
     private String name;
     private String mobile;
 
-    private List<Message> messageList;
-
-    public User() {
-    }
-
     public User(String name, String mobile) {
         this.name = name;
         this.mobile = mobile;
+    }
+
+    public User() {
     }
 
     public String getName() {
@@ -30,13 +26,5 @@ public class User {
 
     public void setMobile(String mobile) {
         this.mobile = mobile;
-    }
-
-    public List<Message> getMessageList() {
-        return messageList;
-    }
-
-    public void setMessageList(List<Message> messageList) {
-        this.messageList = messageList;
     }
 }
